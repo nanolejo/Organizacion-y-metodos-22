@@ -29,10 +29,8 @@ function generar() {
       var porc_suma = 25 - faltas.value * 5;
     }
     const res_presentismo = parseInt(sueldobasico.value / 100) * porc_suma;
-
-    const cuenta_antiguedad =
-      parseInt(sueldobasico.value / 100) * antiguedad.value;
-    const res_antiguedad = cuenta_antiguedad * antiguedad.value;
+    
+    const res_antiguedad = sueldobasico.value / 100 * antiguedad.value;
 
     const res_feriado = feriados.value * valor_hora * 8;
 
